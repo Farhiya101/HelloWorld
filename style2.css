@@ -1,0 +1,172 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.full_page
+{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../dummy/logo.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-left: 50px;
+}/*setting dimentions of the navigation bar*/
+nav
+{
+	flex:1 ;
+	text-align: right;
+}
+nav ul
+{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li
+{
+	display: inline-block;
+	margin-right: 70px;
+}
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+}
+nav ul li button
+{
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+	outline: none;
+	cursor: pointer;
+	background:transparent ;
+	boarder: none;
+}
+nav ul li button:hover
+{
+	color: aqua;
+}
+nav ul li a:hover
+{
+	color: aqua;
+}
+a
+{
+	text-decoration: none;
+	font-size: 28px;
+	color: palevioletred;
+}
+#login_form
+{
+	display: none;
+}
+.form_box
+{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 2% auto;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	overflow: hidden;
+}
+.button_box
+{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: auto;
+	border-radius: 30px;
+}
+.toggle_btn
+{
+	padding: 10px 30px;
+	cursor: auto;
+	background: transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100px;
+	height: 39px;
+	background: #f3c693;
+	border-radius: 30px;
+	transition: 1s;
+}
+.input_group_login
+{
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: 1s;
+}
+.input_group_register
+{
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition: 1s;
+}
+.input_field
+{
+	width: 100%;
+	padding: 10px 0 ;
+	margin: 5px 0;
+	border-left: 5px;
+	border-top: 0;
+	border-right: 5px;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.submit_btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check_box
+{
+	margin: 30px 10px 34px 0;
+}
+#login
+{
+	left: 50px;
+}
+#login input
+{
+	color: orange;
+	font-size: 15px;
+}
+#register
+{
+	left: 450px;
+}
+#register input
+{
+	color: white;
+	font-size: 15px;
+}
