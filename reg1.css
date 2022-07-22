@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+.button_box
+{
+  width: 100%;
+  margin:  auto;
+  position: relative;
+  box-shadow: auto;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  
+  length: 50%;
+}
+.input_group_login
+{
+  top: 150px;
+  position: absolute;
+  width: 280px;
+  transition: 1s;
+}
+.input_group_register
+{
+  top: 120px;
+  position: absolute;
+  width: 280px;
+  transition: 1s;
+}
+
+/* Create four equal columns that floats next to each other */
+/*.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
