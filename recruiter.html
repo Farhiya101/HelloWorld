@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recruiter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="reg1.css">
+    <link href="form1.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <header>
+        <div class="inner-width">
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+                <a href="bt company.html"><i class="fas fa-home home"></i> Home</a>
+                <a href="registration.html"><i class="fas fa-align-left about"></i>PORTFOLIO</a>
+                
+            </nav>
+        </div>
+    </header>
+</head>
+
+<body>
+    <h1>Welcome to the registration page</h1>
+    <p>Please fill out all the forms</p>
+
+    <form action="/" method="$_POST" id="form1">
+        <!-- <div class="form_box"> -->
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button"onclick="seeker()"class="toggle_btn">Job Seeker Registration</button>
+                <button type="button"onclick="recruiter()"class="toggle_btn">Recruiter Registration</button>
+            </div>
+<!--             <div class="column" style="background-color:#aaaa">
+                <h2>Job Seeker Registration</h2>
+                <form id="login" class="input_group_login">
+                Enter Full Names: 
+                <br><input type="text" name="full_name"  required/>
+                <div class="col-md-6 col-sm-12 border-top" style="text-align:left; min-height: 45px;">
+                </div>
+                <br> Upload your professional photo:
+                <div class="col-md-6 col-sm-12 border-top" style="text-align:left; min-height: 45px;">
+                    <input class="form-control" type="file" id="fileName" accept=".jpg,.jpeg,.png,.gif" name="profileImage" onchange="previewFile(this), validateFileType();" required="">
+               </div>
+                
+                <br> Profession:
+                <br> <input type="text" name="prof"  required/>
+                <br> Area of specialization :
+                <br> <input type="text" name="specialization"  required/>
+            
+                <br> Career Profile : 
+                <br><input type="text Area" name="career"  required/>
+                <br> Key Competencies: 
+                <br><input type="text-area" name="key_competencies"  required/>
+                <br> Add all previous work places (title and duties)  : 
+                <br><input type="text Area" name="career" value="+" />
+                <br> Educational background (name of course,)  : 
+                <br><input type="text Area" name="career"value="+" />
+                <br> Awards: 
+                <br><input type="text Area" name="career" value="+"/>
+                <br> Referees : 
+                <br><input type="text Area" name="career" value="+"/>
+                <br> Professional bodies : 
+                <br><input type="text Area" name="career" value="+" />
+                <br> Associations: 
+                <br><input type="text Area" name="career" value="+"/>
+                <div class="col-md-6 col-sm-12 border-top" style="text-align:left; min-height: 45px;">
+                </div>
+                <br> Upload your CV:
+                <div class="col-md-6 col-sm-12 border-top" style="text-align:left; min-height: 45px;">
+                    <input class="form-control" type="file" id="fileName" accept=".jpg,.jpeg,.png,.gif" name="profileImage" onchange="previewFile(this), validateFileType();" required="">
+               </div>
+               
+               <br> Upload your Certificates:
+                <div class="col-md-6 col-sm-12 border-top" style="text-align:left; min-height: 45px;">
+                    <input class="form-control" type="file" id="fileName" accept=".jpg,.jpeg,.png,.gif" name="profileImage" onchange="previewFile(this), validateFileType();" required="">
+                <br><button type="submit">Submit</button>
+               </div>
+               </form> -->
+               <form id="register" class="input_group_register" >
+               <h2>Recruiter Information</h2>
+             <div class="column" style="background-color:#aaaa"> 
+                    <br> Full Name: 
+                    <br><input type="text" name="fName" />
+                    <br> Description: 
+                    <br><textarea id="Description" name="desc" rows="10" cols="50"></textarea> 
+                    <br> Image of the hotel: 
+                    <br><div class="col-md-6 col-sm-12 border-top" style="text-align:left; min-height: 45px;">
+                    <input class="form-control" type="file" id="fileName" accept=".jpg,.jpeg,.png,.gif" name="profileImage" onchange="previewFile(this), validateFileType();" required=""></div>
+                 <div class="column" style="background-color:white">
+                <button type="submit" class="submit_btn">Register Now</button>
+            </div>
+            </div> 
+        </form>
+           <!-- </div> -->
+               
+           <!--  <div class="column" style="background-color:white;">
+                
+            </div>
+            <div class="column" style="background-color:#aaaa">
+                
+            </div>
+            <div class="column" style="background-color:white">
+                <button type="submit">Submit</button>
+                <p>check your records at the Online reports section</p>
+                <p><a href="display.php"><i class="fab fa-buffer works"></i>Online reports</a></p>
+                <p><a href="searchRecord.php"><i class="fab fa-buffer works"></i>Search Record</a></p>
+
+            </div>
+        </div> -->
+    </form>
+    <script>
+        var x=document.getElementById("seeker");
+        var y=document.getElementById("recruiter");
+        var z=document.getElementById("btn");
+        function register()
+        {
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login()
+        {
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }   
+    </script>
+    <script>
+        var modal=document.getElementById("login_form");
+        window.onclick=function (event)
+        {
+            if (event.target==modal)
+            {
+                modal.style.display="none";
+            }
+        }
+    </script>
+</body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title></title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<footer>
+    <div class="footer-container">
+        <div class="left-col">
+           
+            <div class="social-media">
+                <a href="https://web.facebook.com/HoteliersinKenya/ "><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UCJxR6Lh3GgCcNTQd0cqEMLg "><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/-0929b81aa"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="rights-text">© 2022 Created.</p>
+        </div>
+        
+    </div>
+</footer>
+
+
+</html>
